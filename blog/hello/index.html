@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello. This is Paper. — Safa Orhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav class="nav scrolled">
+    <a href="/" class="nav-logo" aria-label="Safa Orhan — Home">SO</a>
+    <ul class="nav-links" role="list">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      <article class="blog-post">
+        <p class="blog-post-date">September 21, 2023</p>
+        <h1 class="blog-post-title">Hello. This is Paper.</h1>
+        <div class="blog-post-body">
+          <p>I've been reading a lot lately and this re-kindled my love for writing. For so long, I've been meaning to start a self-hosted blog. A blog is a better place, I think, for longer and more structured writings. For the rest of the updates, Twitter¹ would be my go-to platform.</p>
+          <p>None of the options I considered for blogging solutions could bring me into using them and hence I wanted to try creating my own blogging solution.</p>
+          <p>From the first minute, I knew roughly what I wanted: a clean WYSIWYG interface with the aesthetics of physical print books. I wanted: a paper.</p>
+          <p>A digital paper where what you write would be exactly the same with what people would see. After a few hours of web development² work, here we are:</p>
+          <p>You are looking³ at the very first version of Paper.</p>
+          <p>Before publishing, a page allows me to write with contenteditable attributes set, and a few js functions that makes it convenient for me to write without messing up the whole thing. It also uses Firestore as an auto save assistant.</p>
+          <p>To publish a writing, though, I just save the html and upload it to the enabled Github Pages repository that backs up the blog. The css file is already there and the js files allowing me to write locally are not served.</p>
+          <p>All of the functionality that allows me to write the page (the stationary kit if you will) stays at home when I publish this page in my blog. So you see the read-only end product.</p>
+          <p>If I ever wanted to edit a page, I still could do it locally but I need to upload a second version to the repository. This also allows me to version control all my writings.</p>
+          <p>Yes, some manual work is included in publishing a page, but I hope that it gets better in time with the upcoming versions.</p>
+          <p>The first things I want to work on in Paper is related to the writing environment though: I currently have no ways to make a text bold, add a heading or an image.</p>
+          <p>Overall, I love how this turned out to be. Hello. This is Paper.</p>
+          <p>---</p>
+          <p>[1] Yes I will keep calling it Twitter at least for a couple of years.</p>
+          <p>[2] I love creating for web but for some reason I couldn't develop affection to the tools and environments that are used to build web apps.</p>
+          <p>[3] Of course, if you are reading this post close to the publication date.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Safa Orhan</p>
+    </div>
+  </footer>
+
+</body>
+</html>

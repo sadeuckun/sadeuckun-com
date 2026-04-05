@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 .claude/skills/ui-ux-pro-max/scripts/search.py \"animation accessibility scroll\" --domain ux)",
+      "Bash(open /Users/safa/Documents/Projects/safaorhandotcom/index.html)",
+      "WebFetch(domain:safaorhan.com)",
+      "WebFetch(domain:twitter.com)",
+      "WebFetch(domain:blog.safaorhan.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:safaorhan.medium.com)",
+      "WebSearch",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:konyahackerspace.org)",
+      "WebFetch(domain:sessionize.com)",
+      "WebFetch(domain:www.slideshare.net)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:proandroiddev.com)",
+      "WebFetch(domain:www.linkedin.com)",
+      "WebFetch(domain:www.toptal.com)",
+      "Bash(python3:*)",
+      "Bash(xargs sed:*)"
+    ]
+  }
+}

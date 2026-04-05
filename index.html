@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Safa Orhan — Engineering Manager, maker, and community builder based in Konya, Turkey." />
+  <title>Safa Orhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo" aria-label="Safa Orhan — Home">SO</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <canvas id="gol-canvas" aria-hidden="true"></canvas>
+    <div class="container hero-container">
+
+      <!-- Left: Identity -->
+      <div class="hero-left">
+        <div class="hero-meta">
+          <span class="hero-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            Engineering Manager · RTIC Outdoors
+          </span>
+          <span class="hero-meta-sep" aria-hidden="true">·</span>
+          <span class="hero-location">Konya, Turkey</span>
+        </div>
+
+        <h1 class="hero-name">Safa<br>Orhan</h1>
+
+        <p class="hero-role">
+          <span id="role-text">Engineering Manager</span>
+        </p>
+
+        <p class="hero-bio">
+          Makes software for a living, hacks electronics for fun,
+          and gets way too excited for clever things.
+        </p>
+
+        <div class="hero-links">
+          <a href="https://www.youtube.com/c/SafaOrhanTR" class="hero-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+            </svg>
+            YouTube
+          </a>
+          <a href="https://x.com/safaorhantr" class="hero-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            Twitter
+          </a>
+          <a href="https://safaorhan.medium.com" class="hero-link" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+            </svg>
+            Medium
+          </a>
+          <a href="https://github.com/safaorhan" class="hero-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Facts panel -->
+      <aside class="hero-right" aria-label="Quick facts">
+        <div class="fact">
+          <span class="fact-label">Building</span>
+          <span class="fact-value">
+            <a href="https://konyahackerspace.org" class="fact-link" target="_blank" rel="noopener noreferrer">Konya Hackerspace</a>
+            — since 2025
+          </span>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Day job</span>
+          <span class="fact-value">Engineering Manager at <a href="https://www.rticoutdoors.com" class="fact-link" target="_blank" rel="noopener noreferrer">RTIC Outdoors</a></span>
+          <div class="fact-tags" style="margin-top: 0.5rem;">
+            <span class="fact-tag">Warehouse Management</span>
+            <span class="fact-tag">MDM</span>
+            <span class="fact-tag">Retail</span>
+          </div>
+        </div>
+        <div class="fact">
+          <span class="fact-label">Hobbies</span>
+          <div class="fact-tags">
+            <span class="fact-tag">Hobby Electronics</span>
+            <span class="fact-tag">3D Printing</span>
+            <span class="fact-tag">Making Videos</span>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">01</span>
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hey, this is Safa -- a software engineer based in Konya, Türkiye. I studied computer engineering at Boğaziçi University and have been making a living creating software for more than a decade.
+          </p>
+          <p>
+            Being always interested in all sorts of technology, I am an aspiring <a href="https://en.wikipedia.org/wiki/Hacker" class="inline-link" target="_blank" rel="noopener noreferrer">hacker</a> inside.
+          </p>
+          <p>
+            These days, I develop solutions regarding warehouse management, mobile device management and retail at <a href="https://rticoutdoors.com" class="inline-link" target="_blank" rel="noopener noreferrer">RTIC Outdoors</a> while building a community of local hackers and a highly functional community space for <a href="https://konyahackerspace.org" class="inline-link" target="_blank" rel="noopener noreferrer">Konya Hackerspace</a>.
+          </p>
+          <p>
+            When I have some free time, I like to read non-fiction books, do hobby electronics or make fun videos for <a href="https://www.youtube.com/c/SafaOrhanTR" class="inline-link" target="_blank" rel="noopener noreferrer">YouTube</a>.
+          </p>
+        </div>
+        <div class="about-aside reveal">
+          <div class="tag-group">
+            <span class="tag-label">Education</span>
+            <div class="tags">
+              <span class="tag">Boğaziçi University</span>
+              <span class="tag">Computer Engineering</span>
+            </div>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Hobbies</span>
+            <div class="tags">
+              <span class="tag">Hobby Electronics</span>
+              <span class="tag">3D Printing</span>
+              <span class="tag">Making Videos</span>
+              <span class="tag">Running</span>
+              <span class="tag">Travel</span>
+            </div>
+          </div>
+          <div class="tag-group">
+            <span class="tag-label">Community</span>
+            <div class="tags">
+              <a href="https://konyahackerspace.org" class="tag tag--accent" target="_blank" rel="noopener noreferrer">Konya Hackerspace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section section--alt" id="work" aria-label="Work">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num">02</span>
+        <h2>Work</h2>
+      </div>
+
+      <!-- Career path -->
+      <h3 class="subsection-title reveal">Career</h3>
+      <div class="career-list">
+
+        <div class="career-row reveal">
+          <div class="career-left">
+            <span class="career-company"><a href="https://www.rticoutdoors.com" class="career-link" target="_blank" rel="noopener noreferrer">RTIC Outdoors</a></span>
+            <span class="career-role">Manager, Engineering</span>
+          </div>
+          <p class="career-desc">
+            Leading engineering at a fast-growing outdoor gear company. Building products
+            around warehouse management, mobile device management, and retail.
+          </p>
+          <span class="career-period">2022 – Present</span>
+        </div>
+
+        <div class="career-row reveal">
+          <div class="career-left">
+            <span class="career-company"><a href="https://www.youtube.com/watch?v=APkb4AILvNU" class="career-link" target="_blank" rel="noopener noreferrer">Cactus.School</a></span>
+            <span class="career-role">Trainer &amp; Mentor</span>
+          </div>
+          <p class="career-desc">
+            Built online Android courses for different skill levels. Also trained bootcamps for Trendyol and UpSchool.
+          </p>
+          <span class="career-period">2020 – 2021</span>
+        </div>
+
+        <div class="career-row reveal">
+          <div class="career-left">
+            <span class="career-company"><a href="https://www.wayfair.com" class="career-link" target="_blank" rel="noopener noreferrer">Wayfair</a></span>
+            <span class="career-role">Android Engineer</span>
+          </div>
+          <p class="career-desc">
+            Part of a 40+ person Android team in Berlin. Worked on an app with over
+            10 million downloads.
+          </p>
+          <span class="career-period">2018 – 2020</span>
+        </div>
+
+        <div class="career-row reveal">
+          <div class="career-left">
+            <span class="career-company"><a href="https://www.linkedin.com/in/safaorhan/" class="career-link" target="_blank" rel="noopener noreferrer">Various Work</a></span>
+            <span class="career-role">Software Engineer</span>
+          </div>
+          <p class="career-desc">
+            Various software engineering roles — startups, software agencies, and freelance work. Mostly Android app development.
+          </p>
+          <span class="career-period">2013 – 2018</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WRITING -->
+  <section class="section" id="blog" aria-label="Blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-num" style="color: var(--amber)">03</span>
+        <h2>Blog</h2>
+      </div>
+      <div class="blog-index-list">
+        <a href="/blog/2025" class="blog-index-row reveal">
+          <div class="blog-index-left">
+            <span class="blog-index-title">2025</span>
+            <p class="blog-index-excerpt">This was one crazy year. I was overloaded — house construction, launching a hackerspace, new hobbies, and a full-time job all at once.</p>
+          </div>
+          <span class="blog-index-date">Jan 16, 2026</span>
+        </a>
+        <a href="/blog/2024" class="blog-index-row reveal">
+          <div class="blog-index-left">
+            <span class="blog-index-title">2024</span>
+            <p class="blog-index-excerpt">This year I focused on losing weight, learning Arabic, and making vlogs. I hit many milestones and bettered the quality of my life by a ton.</p>
+          </div>
+          <span class="blog-index-date">Dec 31, 2024</span>
+        </a>
+        <a href="/blog/portfolio" class="blog-index-row reveal">
+          <div class="blog-index-left">
+            <span class="blog-index-title">Building a Portfolio</span>
+            <p class="blog-index-excerpt">Building a portfolio is one of many aspects in proving your skills and improving your chances at landing a good job.</p>
+          </div>
+          <span class="blog-index-date">Jan 25, 2024</span>
+        </a>
+        <a href="/blog/2023" class="blog-index-row reveal">
+          <div class="blog-index-left">
+            <span class="blog-index-title">2023</span>
+            <p class="blog-index-excerpt">Life is a mixture of sad and happy, and this year was no different. I rented an office, got back into reading, and started setting rules to live by.</p>
+          </div>
+          <span class="blog-index-date">Dec 12, 2023</span>
+        </a>
+        <a href="/blog/rules-to-live-by" class="blog-index-row reveal">
+          <div class="blog-index-left">
+            <span class="blog-index-title">Rules To Live By</span>
+            <p class="blog-index-excerpt">A rule is a decision your current self makes, on behalf of all your future selves — a firm manifestation of self-discipline that becomes part of your identity.</p>
+          </div>
+          <span class="blog-index-date">Oct 13, 2023</span>
+        </a>
+        <a href="/blog/thinking-fast-and-slow-one-important-lesson" class="blog-index-row reveal">
+          <div class="blog-index-left">
+            <span class="blog-index-title">Thinking, Fast and Slow: One Important Lesson</span>
+            <p class="blog-index-excerpt">One highlight was so important that if it were the only lesson I learned from this book, it would still be worth reading.</p>
+          </div>
+          <span class="blog-index-date">Oct 5, 2023</span>
+        </a>
+        <a href="/blog/losing-30" class="blog-index-row reveal">
+          <div class="blog-index-left">
+            <span class="blog-index-title">Losing Thirty Before Thirty: A Challenge</span>
+            <p class="blog-index-excerpt">Thirty is a final goodbye to childhood. I've been obese since my teenage years, and now it's time to fight it for good.</p>
+          </div>
+          <span class="blog-index-date">Sep 24, 2023</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Safa Orhan</p>
+    </div>
+  </footer>
+
+  <div class="hero-character" aria-hidden="true">
+    <img src="/assets/safa-cartoon.png" alt="" width="220" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

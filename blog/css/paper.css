@@ -1,0 +1,174 @@
+body {
+    background-color: rgb(252, 248, 245);
+    font-size: 1.25rem;
+    font-family: 'Source Serif 4', serif;
+    color: rgb(33, 33, 33);
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#editor {
+    width: 680px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: -0.01em;
+    font-family: 'IM Fell Great Primer', serif;
+    color: rgb(33, 33, 33);
+}
+
+p {
+    font-size: 1.25rem;
+    font-family: 'Source Serif 4', serif;
+    color: rgb(33, 33, 33);
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    body {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+
+a {
+    color: rgb(33, 33, 33);
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+.header {
+    background-size: cover;
+    height: 200px;
+    margin-top: 2em;
+}
+
+.content {
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 200px;
+}
+
+.meta > p {
+    color: rgb(189, 189, 189);
+}
+
+/* Back nav */
+.blog-nav {
+    width: 680px;
+    margin: 2rem auto 0;
+    font-family: 'Source Serif 4', serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.blog-nav a {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.blog-nav a:hover {
+    color: rgb(33, 33, 33);
+}
+
+@media only screen and (max-width: 992px) {
+    .blog-nav {
+        width: auto;
+        padding: 0 1.5rem;
+    }
+}
+
+/* Index */
+.index {
+    width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 240px;
+    margin-bottom: 240px;
+}
+
+.index .title {
+    font-weight: 500;
+    width: 502px;
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+}
+
+.index .title::after {
+    font-weight: 300;
+    content: ' .....................................................................................................';
+}
+
+.index .date {
+    float: right;
+}
+
+.index a {
+    text-decoration: none;
+}
+
+.index p {
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #editor {
+        width: auto;
+        padding: 0 1.5rem;
+    }
+
+    p {
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    body {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .index p {
+        line-height: 4rem;
+        font-size: 2rem;
+    }
+
+    .index .title::after {
+        font-weight: 300;
+    }
+
+    .index .title {
+        font-weight: 500;
+        width: stretch;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+
+    .index .date {
+        display: none;
+    }
+
+    .index {
+        width: auto;
+        padding: 0 1.5rem;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+}
