@@ -80,7 +80,7 @@ if (golCanvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches)
 
   function draw() {
     ctx.clearRect(0, 0, golCanvas.width, golCanvas.height);
-    ctx.fillStyle = 'rgba(44, 35, 24, 0.055)';
+    ctx.fillStyle = 'rgba(44, 35, 24, 0.025)';
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
         if (grid[r][c]) {
