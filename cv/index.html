@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Safa Orhan - CV</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --ink: #111111;
+    --ink-soft: #333333;
+    --ink-mute: #8a8a86;
+    --paper: #faf9f6;
+    --rule: #e6e4dc;
+    --accent: #1f2a55;
+    --accent-soft: #1f2a5510;
+    --density-row: 10px;
+    --density-section: 19px;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #ece9df;
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  body.dark {
+    background: #0e0e0d;
+    --ink: #f1efe9;
+    --ink-soft: #b9b6ad;
+    --ink-mute: #76736b;
+    --paper: #161614;
+    --rule: #2a2a27;
+    --accent-soft: #ffffff10;
+  }
+
+  /* A4 page surface */
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 28px auto;
+    background: var(--paper);
+    color: var(--ink);
+    padding: 13mm 13mm 12mm 13mm;
+    box-sizing: border-box;
+    box-shadow:
+      0 1px 2px rgba(0,0,0,0.06),
+      0 12px 40px rgba(0,0,0,0.12);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: start;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .name {
+    font-family: 'Geist', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.025em;
+    line-height: 1;
+    margin: 0 0 6px 0;
+    color: var(--ink);
+  }
+  .role {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    font-size: 10px;
+    color: var(--ink-soft);
+    font-family: 'Geist Mono', monospace;
+  }
+  .contact a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1px;
+  }
+  .contact a:hover { color: var(--accent); border-color: var(--accent); }
+
+  .photo {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #d4d0c4 0%, #b8b3a4 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--paper);
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid var(--rule);
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  /* Summary */
+  .summary {
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 12px 0 0 0;
+    text-wrap: pretty;
+  }
+  .summary strong { font-weight: 600; }
+
+  /* Sections */
+  section.block {
+    margin-top: var(--density-section);
+  }
+  .section-head {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    font-weight: 500;
+    padding-top: 4px;
+  }
+  .section-rule {
+    height: 1px;
+    background: var(--rule);
+    align-self: center;
+    margin-top: 0;
+  }
+
+  /* Two-column layout for items */
+  .row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+    margin-bottom: var(--density-row);
+    align-items: baseline;
+  }
+  .row:last-child { margin-bottom: 0; }
+  .row-meta {
+    font-family: 'Geist Mono', monospace;
+    font-size: 9px;
+    color: var(--ink-mute);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 2px;
+  }
+  .row-meta .loc {
+    display: block;
+    color: var(--ink-mute);
+    margin-top: 1px;
+  }
+  .row-body { font-size: 11px; line-height: 1.5; color: var(--ink-soft); }
+  .row-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+  }
+  .row-company {
+    font-size: 10.5px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 1px;
+    margin-bottom: 3px;
+  }
+  body.dark .row-company { color: #a8b4ff; }
+  .row-desc {
+    color: var(--ink-soft);
+    font-size: 10.5px;
+    line-height: 1.5;
+    text-wrap: pretty;
+  }
+  .row-desc a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1px;
+  }
+  .row-desc a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* Skills */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 20px;
+    font-size: 10.5px;
+  }
+  .skill-label {
+    font-family: 'Geist Mono', monospace;
+    font-size: 8.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-mute);
+    margin-bottom: 2px;
+  }
+  .skill-list { color: var(--ink); line-height: 1.45; font-size: 10.5px; }
+
+  /* Languages + interests inline list */
+  .pill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    font-size: 10.5px;
+    color: var(--ink);
+  }
+  .pill-list .item .lvl {
+    color: var(--ink-mute);
+    font-family: 'Geist Mono', monospace;
+    font-size: 9px;
+    margin-left: 5px;
+  }
+
+  /* Print */
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body { background: white; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      min-height: 297mm;
+      page-break-after: avoid;
+    }
+    .print-btn { display: none; }
+  }
+
+  /* Print button */
+  .print-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    padding: 9px 14px;
+    font-family: 'Geist Mono', monospace;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    border-radius: 999px;
+    z-index: 10;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+  }
+  .print-btn:hover { background: var(--accent); }
+  body.dark .print-btn { background: var(--paper); color: var(--ink); }
+</style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">Print / PDF</button>
+
+  <article class="page">
+
+    <header class="header">
+      <div>
+        <h1 class="name">Safa Orhan</h1>
+        <div class="role">Engineering Manager</div>
+        <div class="contact">
+          <span><a href="mailto:ahmetsafaorhan@gmail.com" target="_blank" rel="noreferrer">ahmetsafaorhan@gmail.com</a></span>
+          <span><a href="https://safaorhan.com" target="_blank" rel="noreferrer">safaorhan.com</a></span>
+          <span><a href="https://www.linkedin.com/in/safaorhan" target="_blank" rel="noreferrer">linkedin.com/in/safaorhan</a></span>
+          <span>Konya, Türkiye · Remote</span>
+        </div>
+      </div>
+      <div class="photo" aria-label="Headshot">
+        <img src="headshot.jpg" alt="Safa Orhan" />
+      </div>
+    </header>
+
+    <p class="summary">
+      <strong>Thirteen years</strong> of building software across startups, agencies, and enterprise teams, with <strong>Android</strong> at the core and everything else explored along the way. I consistently take ownership beyond the code: design systems, product decisions, team culture. Looking for the right <strong>remote</strong> role, somewhere between <strong>engineering</strong>, <strong>management</strong>, and <strong>product</strong>.
+    </p>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-title">Experience</div>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2021 – 2026<span class="loc">Remote</span></div>
+        <div class="row-body">
+          <div class="row-title">Engineering Manager</div>
+          <div class="row-company">RTIC Outdoors</div>
+          <div class="row-desc">Led a distributed team of engineers building RTIC's enterprise warehouse platform, owning the <strong>full product cycle</strong> from roadmap to code review. Designed the UI and built the in-house <strong>Figma design system</strong> that served the entire product. Also designed and built an in-house Android MDM solution from scratch, replacing the existing commercial tool. Introduced agile workflows, held regular 1:1s, and maintained a healthy and productive team culture across time zones.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2018 – 2020<span class="loc">Berlin, DE</span></div>
+        <div class="row-body">
+          <div class="row-title">Android Engineer</div>
+          <div class="row-company">Wayfair</div>
+          <div class="row-desc">Contributed to Wayfair's consumer app with <strong>10 million+ downloads</strong>, working alongside 40+ Android engineers across two continents. Also helped build two internal Android apps: a tablet companion for category managers at trade fairs, and a warehouse operations tool. Led an open-source Android UI library and delivered development workshops for internal engineers and the broader community.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2013 – 2018<span class="loc">Istanbul</span></div>
+        <div class="row-body">
+          <div class="row-title">Android Engineer</div>
+          <div class="row-company">Freelance &amp; Startups</div>
+          <div class="row-desc">Shipped Android apps across startups, tech agencies, and freelance engagements throughout university, graduating with <strong>years of production experience</strong> already behind me. Co-founded a coworking and makerspace near Boğaziçi, ran a small mobile development studio, and picked up team leadership early.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-title">Projects</div>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2025 – 2026</div>
+        <div class="row-body">
+          <div class="row-title">Pocket Manager — Custom MDM</div>
+          <div class="row-company">RTIC Outdoors</div>
+          <div class="row-desc">Pocket Manager is a custom MDM built to replace a commercial tool that had become a liability. The design covered everything: API contracts, provisioning flows, and an admin dashboard built alongside a backend engineer, backed by a WorkManager-based task system for reliable background execution across dozens of Zebra terminals. The CTO adopted it outright, cancelling existing licenses and <strong>saving thousands of dollars per year</strong>.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2021 – 2026</div>
+        <div class="row-body">
+          <div class="row-title">Pocket — Warehouse Operations App</div>
+          <div class="row-company">RTIC Outdoors</div>
+          <div class="row-desc">Pocket is an Android warehouse app on Zebra hand terminals, built for a non-traditional user space: extreme conditions where the UI extends to external displays, stream-deck hardware, and thermal printers. The role began as sole developer and grew into leading a team, conducting user research on the floor, and crafting a <strong>purpose-built design system</strong> for the environment. Built following industry best practices: modular Kotlin with Jetpack Compose, highly testable, and CI/CD ready.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-title">Education</div>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2012 – 2017<span class="loc">Istanbul</span></div>
+        <div class="row-body">
+          <div class="row-title">B.Sc. Computer Engineering — Boğaziçi University</div>
+          <div class="row-desc">One of Turkey's most prestigious universities, consistently ranked among the <strong>top in the country</strong>, with a computer engineering program well-regarded for its rigorous curriculum.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-title">Skills</div>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row">
+        <div class="row-meta"></div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <div class="skill-label">Engineering</div>
+            <div class="skill-list">Kotlin, Jetpack Compose, Android SDK, API design, Zebra SDKs</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Design &amp; Product</div>
+            <div class="skill-list">Figma, design systems, user research, roadmap, feature planning</div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-label">Leadership</div>
+            <div class="skill-list">Team building, hiring, 1:1s, mentorship</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="section-head">
+        <div class="section-title">More</div>
+        <div class="section-rule"></div>
+      </div>
+      <div class="row">
+        <div class="row-meta">Languages</div>
+        <div class="pill-list">
+          <span class="item">Turkish<span class="lvl">Native</span></span>
+          <span class="item">English<span class="lvl">Fluent</span></span>
+          <span class="item">Arabic<span class="lvl">Intermediate</span></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row-meta">Interests</div>
+        <div class="row-desc">Hackerspaces · Hobby Electronics · Making YouTube Videos · 3D Printing · Drones</div>
+      </div>
+    </section>
+
+  </article>
+
+</body>
+</html>
