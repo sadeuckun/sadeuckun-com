@@ -122,6 +122,28 @@ const roles = [
   'Android Developer',
   'Maker',
   'Community Builder',
+  'Technical PM',
+  'Tech Lead',
+  'Product Designer',
+  'Computer Engineer',
+  'Youtuber',
+  'Hardware Hacker',
+  'Wannabe FPV Pilot',
+  'Coffee Lover',
+  'Father of Two',
+  'Foodie',
+  'Boun Alumnus',
+  'Podcast Co-host',
+  'Hackerspace Enthusiast',
+  'Code-golfer',
+  'Bambu Lab Repairman',
+  'Life-long Dieter',
+  'Figma Lover',
+  'Android Studio Veteran',
+  'WIP Project Generator',
+  'Vlogger',
+  'Avid YouTube Watcher',
+  'Arabic Learner',
 ];
 
 const roleEl = document.getElementById('role-text');
@@ -141,5 +163,5 @@ if (roleEl) {
       roleEl.style.opacity = '1';
       roleEl.style.transform = 'translateY(0)';
     }, 300);
-  }, 3000);
+  }, 2000);
 }
