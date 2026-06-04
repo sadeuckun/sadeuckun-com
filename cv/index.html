@@ -18,8 +18,8 @@
     --rule: #e6e4dc;
     --accent: #1f2a55;
     --accent-soft: #1f2a5510;
-    --density-row: 10px;
-    --density-section: 19px;
+    --density-row: 8px;
+    --density-section: 15px;
   }
 
   html, body {
@@ -50,7 +50,7 @@
     margin: 28px auto;
     background: var(--paper);
     color: var(--ink);
-    padding: 13mm 13mm 12mm 13mm;
+    padding: 12mm 13mm 11mm 13mm;
     box-sizing: border-box;
     box-shadow:
       0 1px 2px rgba(0,0,0,0.06),
@@ -67,8 +67,7 @@
     grid-template-columns: 1fr auto;
     gap: 20px;
     align-items: start;
-    padding-bottom: 12px;
-    border-bottom: 1px solid var(--rule);
+    padding-bottom: 10px;
   }
   .name {
     font-family: 'Geist', sans-serif;
@@ -85,7 +84,7 @@
     text-transform: uppercase;
     letter-spacing: 0.14em;
     color: var(--accent);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-weight: 500;
   }
   .contact {
@@ -125,9 +124,9 @@
   /* Summary */
   .summary {
     font-size: 11px;
-    line-height: 1.5;
+    line-height: 1.42;
     color: var(--ink);
-    margin: 12px 0 0 0;
+    margin: 10px 0 0 0;
     text-wrap: pretty;
   }
   .summary strong { font-weight: 600; }
@@ -141,7 +140,7 @@
     grid-template-columns: 100px 1fr;
     gap: 20px;
     align-items: baseline;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   .section-title {
     font-family: 'Geist Mono', monospace;
@@ -181,7 +180,7 @@
     color: var(--ink-mute);
     margin-top: 1px;
   }
-  .row-body { font-size: 11px; line-height: 1.5; color: var(--ink-soft); }
+  .row-body { font-size: 11px; line-height: 1.42; color: var(--ink-soft); }
   .row-title {
     font-size: 13px;
     font-weight: 600;
@@ -194,13 +193,13 @@
     color: var(--accent);
     font-weight: 500;
     margin-top: 1px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
   body.dark .row-company { color: #a8b4ff; }
   .row-desc {
     color: var(--ink-soft);
     font-size: 10.5px;
-    line-height: 1.5;
+    line-height: 1.42;
     text-wrap: pretty;
   }
   .row-desc a {
@@ -215,7 +214,7 @@
   .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px 20px;
+    gap: 6px 20px;
     font-size: 10.5px;
   }
   .skill-label {
@@ -232,7 +231,7 @@
   .pill-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px 16px;
+    gap: 4px 14px;
     font-size: 10.5px;
     color: var(--ink);
   }
@@ -288,12 +287,12 @@
     <header class="header">
       <div>
         <h1 class="name">Sade Uckun</h1>
-        <div class="role">Engineering Manager</div>
+        <div class="role">Software Developer</div>
         <div class="contact">
-          <span><a href="mailto:ahmetsafaorhan@gmail.com" target="_blank" rel="noreferrer">ahmetsafaorhan@gmail.com</a></span>
-          <span><a href="https://safaorhan.com" target="_blank" rel="noreferrer">safaorhan.com</a></span>
-          <span><a href="https://www.linkedin.com/in/safaorhan" target="_blank" rel="noreferrer">linkedin.com/in/safaorhan</a></span>
-          <span>Konya, Türkiye · Remote</span>
+          <span><a href="https://sadeuckun.com" target="_blank" rel="noreferrer">sadeuckun.com</a></span>
+          <span><a href="mailto:me@sadeuckun.com">me@sadeuckun.com</a></span>
+          <span><a href="https://www.linkedin.com/in/furkansadeuckun/" target="_blank" rel="noreferrer">linkedin.com/in/furkansadeuckun</a></span>
+          <span><a href="https://github.com/sadeuckun" target="_blank" rel="noreferrer">github.com/sadeuckun</a></span>
         </div>
       </div>
       <div class="photo" aria-label="Headshot">
@@ -302,7 +301,7 @@
     </header>
 
     <p class="summary">
-      <strong>Thirteen years</strong> of building software across startups, agencies, and enterprise teams, with <strong>Android</strong> at the core and everything else explored along the way. I consistently take ownership beyond the code: design systems, product decisions, team culture. Looking for the right <strong>remote</strong> role, somewhere between <strong>engineering</strong>, <strong>management</strong>, and <strong>product</strong>.
+      Software developer focused on <strong>CRM systems</strong>, <strong>operational platforms</strong>, <strong>AI-assisted products</strong> and <strong>self-hosted infrastructure</strong>. I build software that turns complex workflows into maintainable systems, and I work best where <strong>product thinking</strong>, <strong>system design</strong>, <strong>performance</strong> and <strong>execution speed</strong> need to move together.
     </p>
 
     <section class="block">
@@ -312,29 +311,20 @@
       </div>
 
       <div class="row">
-        <div class="row-meta">2021 – 2026<span class="loc">Remote</span></div>
+        <div class="row-meta">2023 – Present<span class="loc">Samsun</span></div>
         <div class="row-body">
-          <div class="row-title">Engineering Manager</div>
-          <div class="row-company">RTIC Outdoors</div>
-          <div class="row-desc">Led a distributed team of engineers building RTIC's enterprise warehouse platform, owning the <strong>full product cycle</strong> from roadmap to code review. Designed the UI and built the in-house <strong>Figma design system</strong> that served the entire product. Also designed and built an in-house Android MDM solution from scratch, replacing the existing commercial tool. Introduced agile workflows, held regular 1:1s, and maintained a healthy and productive team culture across time zones.</div>
+          <div class="row-title">Software Developer</div>
+          <div class="row-company">Multimedia Atelier</div>
+          <div class="row-desc">Develop custom software, <strong>CRM systems</strong> and <strong>management panels</strong> that digitize internal workflows and improve operational efficiency. Build from scratch with <strong>Go</strong>, <strong>FastAPI</strong>, <strong>Next.js</strong> and related technologies while also contributing to <strong>Linux servers</strong>, <strong>self-hosted services</strong>, <strong>CI/CD</strong>, performance improvements and production issue resolution.</div>
         </div>
       </div>
 
       <div class="row">
-        <div class="row-meta">2018 – 2020<span class="loc">Berlin, DE</span></div>
+        <div class="row-meta">2023 – 2023<span class="loc">Remote</span></div>
         <div class="row-body">
-          <div class="row-title">Android Engineer</div>
-          <div class="row-company">Wayfair</div>
-          <div class="row-desc">Contributed to Wayfair's consumer app with <strong>10 million+ downloads</strong>, working alongside 40+ Android engineers across two continents. Also helped build two internal Android apps: a tablet companion for category managers at trade fairs, and a warehouse operations tool. Led an open-source Android UI library and delivered development workshops for internal engineers and the broader community.</div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="row-meta">2013 – 2018<span class="loc">Istanbul</span></div>
-        <div class="row-body">
-          <div class="row-title">Android Engineer</div>
-          <div class="row-company">Freelance &amp; Startups</div>
-          <div class="row-desc">Shipped Android apps across startups, tech agencies, and freelance engagements throughout university, graduating with <strong>years of production experience</strong> already behind me. Co-founded a coworking and makerspace near Boğaziçi, ran a small mobile development studio, and picked up team leadership early.</div>
+          <div class="row-title">Backend Developer</div>
+          <div class="row-company">isTechSoft Software</div>
+          <div class="row-desc">Built backend systems with <strong>Node.js</strong>, <strong>MongoDB</strong> and <strong>Express.js</strong> for healthcare and academic software products. Contributed to API design, data modeling, reporting flows and structured data processing under a short delivery window.</div>
         </div>
       </div>
     </section>
@@ -348,18 +338,32 @@
       <div class="row">
         <div class="row-meta">2025 – 2026</div>
         <div class="row-body">
-          <div class="row-title">Pocket Manager — Custom MDM</div>
-          <div class="row-company">RTIC Outdoors</div>
-          <div class="row-desc">Pocket Manager is a custom MDM built to replace a commercial tool that had become a liability. The design covered everything: API contracts, provisioning flows, and an admin dashboard built alongside a backend engineer, backed by a WorkManager-based task system for reliable background execution across dozens of Zebra terminals. The CTO adopted it outright, cancelling existing licenses and <strong>saving thousands of dollars per year</strong>.</div>
+          <div class="row-title">Company Management Platform</div>
+          <div class="row-desc">Built a self-hosted business operations platform that consolidated <strong>task management</strong>, <strong>leave workflows</strong>, <strong>offers</strong>, <strong>time tracking</strong> and company records into a single product. Developed the system from scratch with <strong>Next.js</strong> and <strong>MongoDB</strong>, adding modules for <strong>real-time updates</strong>, <strong>PDF offer generation</strong>, <strong>OTP-based access</strong>, reminders, and operational reporting, replacing fragmented tools with one maintainable internal system.</div>
         </div>
       </div>
 
       <div class="row">
-        <div class="row-meta">2021 – 2026</div>
+        <div class="row-meta">2024</div>
         <div class="row-body">
-          <div class="row-title">Pocket — Warehouse Operations App</div>
-          <div class="row-company">RTIC Outdoors</div>
-          <div class="row-desc">Pocket is an Android warehouse app on Zebra hand terminals, built for a non-traditional user space: extreme conditions where the UI extends to external displays, stream-deck hardware, and thermal printers. The role began as sole developer and grew into leading a team, conducting user research on the floor, and crafting a <strong>purpose-built design system</strong> for the environment. Built following industry best practices: modular Kotlin with Jetpack Compose, highly testable, and CI/CD ready.</div>
+          <div class="row-title">Telemedicine Platform Development</div>
+          <div class="row-desc">Joined a late-stage patient operations platform built on <strong>Laravel</strong> with supporting <strong>Firebase</strong> flows and quickly adapted to an unfamiliar codebase under delivery pressure. Improved <strong>stability</strong>, simplified CRUD-heavy backend flows, optimized <strong>PDF generation and download processes</strong>, and shipped practical fixes that made the product more reliable for day-to-day use.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2026</div>
+        <div class="row-body">
+          <div class="row-title">BioVet Insight</div>
+          <div class="row-desc">Built an <strong>AI-assisted decision support platform</strong> for veterinary clinics with <strong>Go</strong>, <strong>React</strong> and <strong>LLM + RAG</strong> workflows that combined patient management, laboratory tracking and operational workflows in one system. Worked on application architecture, data processing and AI flows designed to help clinicians evaluate patient history and lab findings with faster, more contextual support.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2024 – Present</div>
+        <div class="row-body">
+          <div class="row-title">Accessibility-Focused Staff Panel</div>
+          <div class="row-desc">Improved a complex internal staff panel for visually impaired users with <strong>Vue.js</strong> and <strong>Symfony</strong> by treating accessibility as a product requirement rather than a surface-level checklist. Refactored frontend structure, strengthened <strong>keyboard navigation</strong>, <strong>focus management</strong> and non-visual interaction patterns, and added <strong>Nightwatch</strong> coverage for critical user flows.</div>
         </div>
       </div>
     </section>
@@ -371,10 +375,20 @@
       </div>
 
       <div class="row">
-        <div class="row-meta">2012 – 2017<span class="loc">Istanbul</span></div>
+        <div class="row-meta">2025 – Present<span class="loc">Turkey</span></div>
         <div class="row-body">
-          <div class="row-title">B.Sc. Computer Engineering — Boğaziçi University</div>
-          <div class="row-desc">One of Turkey's most prestigious universities, consistently ranked among the <strong>top in the country</strong>, with a computer engineering program well-regarded for its rigorous curriculum.</div>
+          <div class="row-title">Computer Programming</div>
+          <div class="row-company">Anadolu University</div>
+          <div class="row-desc">Current formal education alongside production-focused software development work.</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="row-meta">2020 – 2024<span class="loc">Turkey</span></div>
+        <div class="row-body">
+          <div class="row-title">Dentistry</div>
+          <div class="row-company">Ondokuz Mayis University</div>
+          <div class="row-desc">Ended the program to transition fully into software and build a professional path in engineering.</div>
         </div>
       </div>
     </section>
@@ -389,15 +403,15 @@
         <div class="skills-grid">
           <div class="skill-group">
             <div class="skill-label">Engineering</div>
-            <div class="skill-list">Kotlin, Jetpack Compose, Android SDK, API design, Zebra SDKs</div>
+            <div class="skill-list">Go, FastAPI, Next.js, Node.js, Express.js, MongoDB, Laravel, API design</div>
           </div>
           <div class="skill-group">
-            <div class="skill-label">Design &amp; Product</div>
-            <div class="skill-list">Figma, design systems, user research, roadmap, feature planning</div>
+            <div class="skill-label">Systems</div>
+            <div class="skill-list">Linux servers, self-hosted services, CI/CD, performance optimization, infrastructure support</div>
           </div>
           <div class="skill-group">
-            <div class="skill-label">Leadership</div>
-            <div class="skill-list">Team building, hiring, 1:1s, mentorship</div>
+            <div class="skill-label">Product &amp; Delivery</div>
+            <div class="skill-list">CRM workflows, operational software, accessibility, AI workflows, problem solving</div>
           </div>
         </div>
       </div>
@@ -413,12 +427,11 @@
         <div class="pill-list">
           <span class="item">Turkish<span class="lvl">Native</span></span>
           <span class="item">English<span class="lvl">Fluent</span></span>
-          <span class="item">Arabic<span class="lvl">Intermediate</span></span>
         </div>
       </div>
       <div class="row">
         <div class="row-meta">Interests</div>
-        <div class="row-desc">Hackerspaces · Hobby Electronics · Making YouTube Videos · 3D Printing · Drones</div>
+        <div class="row-desc">AI tools · content creation · developer tooling · distributed systems · practical automation</div>
       </div>
     </section>
 
