@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessibility-Focused Staff Panel — Sade Uckun</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <nav class="nav scrolled">
+    <a href="/" class="nav-logo" aria-label="Sade Uckun — Home">SU</a>
+    <ul class="nav-links" role="list">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/projects/" class="nav-link--active">Projects</a></li>
+      <li><a href="https://blog.sadeuckun.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container">
+      <article class="content-article">
+        <p class="content-article-meta">Vue.js · Symfony · Nightwatch</p>
+        <h1 class="content-article-title">Accessibility-Focused Staff Panel</h1>
+        <div class="content-article-body">
+          <p>This was an accessibility-focused staff panel built for a large public-sector related organization. The goal was to make a complex internal system significantly easier to use for visually impaired users.</p>
+          <p><strong>Project details.</strong> The platform was developed with <strong>Vue.js</strong> on the frontend and <strong>Symfony</strong> on the backend. It included custom keyboard shortcuts, tabindex logic and non-visual interaction patterns designed to support smoother navigation for screen reader and keyboard-first users.</p>
+          <p><strong>My contribution.</strong> I took ownership of the frontend improvements, refactored the existing <strong>store-controller structure</strong>, improved code modularity and worked on accessibility-focused interaction design instead of treating accessibility as a superficial checklist.</p>
+          <p>I implemented <strong>keyboard navigation improvements</strong>, <strong>custom shortcuts</strong>, <strong>focus management</strong> and <strong>ARIA-minded refinements</strong> that made the interface more fluid and predictable for users relying on assistive workflows.</p>
+          <p>To improve reliability, I also added and maintained <strong>Nightwatch end-to-end tests</strong>, helping the team validate critical user flows with more confidence.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Sade Uckun</p>
+    </div>
+  </footer>
+
+</body>
+</html>
