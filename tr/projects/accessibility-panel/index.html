@@ -3,12 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Görme engelli kullanıcılar için klavye odaklı etkileşim kalıpları ve Nightwatch testleriyle iyileştirilmiş erişilebilirlik odaklı personel paneli." />
-  <title>Accessibility-Focused Staff Panel — Sade Uckun</title>
+  <meta name="description" content="Avrupa merkezli bir kamu kurumunun büyük mühendislik ekibinde frontend'in ve uçtan uca test altyapısının tamamını sahiplendiğim, klavye odaklı erişilebilirlik odaklı personel paneli." />
+  <meta name="theme-color" content="#ece9df" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Erişilebilirlik Odaklı Personel Paneli — Sade Uckun" />
+  <meta property="og:description" content="Avrupa merkezli bir kamu kurumunun büyük mühendislik ekibinde frontend'in ve uçtan uca test altyapısının tamamını sahiplendiğim, klavye odaklı erişilebilirlik odaklı personel paneli." />
+  <meta property="og:url" content="https://sadeuckun.com/tr/projects/accessibility-panel/" />
+  <meta property="og:site_name" content="Sade Uckun" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:image" content="https://sadeuckun.com/assets/sade-cartoon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Erişilebilirlik Odaklı Personel Paneli — Sade Uckun" />
+  <meta name="twitter:description" content="Avrupa merkezli bir kamu kurumunun büyük mühendislik ekibinde frontend'in ve uçtan uca test altyapısının tamamını sahiplendiğim, klavye odaklı erişilebilirlik odaklı personel paneli." />
+  <meta name="twitter:image" content="https://sadeuckun.com/assets/sade-cartoon.png" />
+  <title>Erişilebilirlik Odaklı Personel Paneli — Sade Uckun</title>
   <link rel="canonical" href="https://sadeuckun.com/tr/projects/accessibility-panel/" />
   <link rel="alternate" hreflang="en" href="https://sadeuckun.com/projects/accessibility-panel/" />
   <link rel="alternate" hreflang="tr" href="https://sadeuckun.com/tr/projects/accessibility-panel/" />
   <link rel="alternate" hreflang="x-default" href="https://sadeuckun.com/projects/accessibility-panel/" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -35,13 +48,13 @@
     <div class="container">
       <article class="content-article">
         <p class="content-article-meta">Vue.js · Symfony · Nightwatch</p>
-        <h1 class="content-article-title">Accessibility-Focused Staff Panel</h1>
+        <h1 class="content-article-title">Erişilebilirlik Odaklı Personel Paneli</h1>
         <div class="content-article-body">
-          <p>Bu proje, büyük bir kamu kurumu ile ilişkili yapıda kullanılan erişilebilirlik odaklı bir personel paneliydi. Amaç, karmaşık bir iç sistemi görme engelli kullanıcılar için belirgin şekilde daha kolay kullanılabilir hâle getirmekti.</p>
-          <p><strong>Proje detayı.</strong> Platformun frontend'i <strong>Vue.js</strong>, backend'i <strong>Symfony</strong> ile geliştirildi. Ekran okuyucu ve klavye odaklı kullanıcılar için daha akıcı bir deneyim sağlamak üzere özel klavye kısayolları, tabindex mantığı ve görsel olmayan etkileşim kalıpları kullanıldı.</p>
-          <p><strong>Katkım.</strong> Frontend iyileştirmelerinin sorumluluğunu aldım, mevcut <strong>store-controller yapısını</strong> refactor ettim, kodun modülerliğini artırdım ve erişilebilirliği yüzeysel bir checklist değil, gerçek bir etkileşim tasarımı problemi olarak ele aldım.</p>
-          <p><strong>Klavye navigasyonu iyileştirmeleri</strong>, <strong>özel kısayollar</strong>, <strong>focus management</strong> ve <strong>ARIA odaklı düzenlemeler</strong> implement ederek yardımcı teknolojilerle çalışan kullanıcılar için arayüzü daha akıcı ve öngörülebilir hale getirdim.</p>
-          <p>Güvenilirliği artırmak için ayrıca <strong>Nightwatch end-to-end testleri</strong> ekledim ve sürdürdüm; böylece ekip kritik kullanıcı akışlarını daha güvenli şekilde doğrulayabildi.</p>
+          <p>Bu, portföyümde en çok sahiplendiğim proje: Avrupa merkezli bir kamu kurumuna teslim edilen, büyük ve çok katmanlı bir mühendislik organizasyonunun içinde yürütülen bir personel platformu. Bu projede tüm frontend kod tabanı ve uçtan uca (E2E) test altyapısı bireysel olarak bana aitti.</p>
+          <p><strong>Projenin bağlamı.</strong> Ürün, backend'te <strong>Symfony</strong>, frontend'de <strong>Vue.js</strong> üzerinde çalışıyordu. Gerçek bir kamu personeli kitlesine hizmet veriyordu — aralarında görme engelli kullanıcılar da vardı ve bu kullanıcılar için klavye odaklı gezinti "bir özellik" değil, işlerini yapabilmenin tek yoluydu.</p>
+          <p><strong>Sahiplenişim.</strong> Frontend ve E2E test tarafı %100 bana aitti. Sprint sonunda işaretlenen bir checklist olarak değil, birincil teslimat olarak; özel <strong>klavye kısayolları</strong>, <strong>focus yönetimi</strong>, <strong>ARIA düzenlemeleri</strong> ve ekran okuyucu uyumlu etkileşim kalıpları geliştirdim. Mevcut <strong>store-controller katmanını</strong> refactor ederek UI davranışını daha öngörülebilir, modüler ve test edilebilir hale getirdim; gezinti modelini sentetik bir uyumluluk anlayışı yerine gerçek klavye odaklı kullanıcılar etrafında yeniden kurdum.</p>
+          <p><strong>Test altyapısı.</strong> <strong>Nightwatch E2E</strong> suite'ini CI checkbox'ı değil, birinci sınıf bir ürün yüzeyi olarak ele aldım. Görme engelli personelin her gün güvendiği kritik kullanıcı akışlarını koruma altına alacak şekilde kapsamı büyüttüm; böylece erişilebilirlik regresyonları gerçek bir kullanıcıya ulaşmadan CI'da kırılır hale geldi.</p>
+          <p><strong>Bu projenin benim için anlamı.</strong> Bu bir portföy demosu değildi. Gerçek kamu çalışanlarının kullandığı, kırılan bir focus trap'in ya da eksik bir aria niteliğinin "birinin işini yapamaması" anlamına geldiği bir yazılımdı. Bu seviyede, bu kitle için, büyük bir organizasyon içinde omuzlarıma gerçek ağırlık binen işler geliştirmek, tam olarak yapmaya devam etmek istediğim mühendislik biçimi.</p>
         </div>
       </article>
     </div>

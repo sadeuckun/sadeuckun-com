@@ -1,0 +1,17 @@
+{
+  "name": "Sade Uckun",
+  "short_name": "Sade Uckun",
+  "description": "Software developer portfolio focused on CRM systems, scalable applications and self-hosted infrastructure.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ece9df",
+  "theme_color": "#ece9df",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
