@@ -117,25 +117,46 @@ if (character && footer) {
 // HERO ROLE CYCLING
 // Edit: add/remove roles here
 // ============================================
-const roles = [
-  'Software Developer',
-  'CRM Systems Developer',
-  'Management Panel Builder',
-  'Automation-Focused Developer',
-  'Node.js Developer',
-  'FastAPI Developer',
-  'Next.js Developer',
-  'Go Developer',
-  'React Native Developer',
-  'System-Oriented Developer',
-  'AI-Assisted Builder',
-  'Self-Hoster',
-  'Infrastructure Builder',
-  'Accessibility-Minded Developer',
-  'Process Optimizer',
-];
+const roleSets = {
+  en: [
+    'Software Developer',
+    'CRM Systems Developer',
+    'Management Panel Builder',
+    'Automation-Focused Developer',
+    'Node.js Developer',
+    'FastAPI Developer',
+    'Next.js Developer',
+    'Go Developer',
+    'React Native Developer',
+    'System-Oriented Developer',
+    'AI-Assisted Builder',
+    'Self-Hoster',
+    'Infrastructure Builder',
+    'Accessibility-Minded Developer',
+    'Process Optimizer',
+  ],
+  tr: [
+    'Yazilim Gelistirici',
+    'CRM Sistemleri Gelistiricisi',
+    'Yonetim Paneli Gelistiricisi',
+    'Otomasyon Odakli Gelistirici',
+    'Node.js Gelistiricisi',
+    'FastAPI Gelistiricisi',
+    'Next.js Gelistiricisi',
+    'Go Gelistiricisi',
+    'React Native Gelistiricisi',
+    'Sistem Odakli Gelistirici',
+    'AI Destekli Urun Gelistiricisi',
+    'Self-Hosted Sistem Kurucusu',
+    'Altyapi Gelistiricisi',
+    'Erisilebilirlik Odakli Gelistirici',
+    'Surec Optimize Edicisi',
+  ],
+};
 
 const roleEl = document.getElementById('role-text');
+const pageLang = document.documentElement.lang === 'tr' ? 'tr' : 'en';
+const roles = roleSets[pageLang];
 let roleIndex = 0;
 
 if (roleEl) {

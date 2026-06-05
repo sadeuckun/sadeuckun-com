@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Görme engelli kullanıcılar için klavye odaklı etkileşim kalıpları ve Nightwatch testleriyle iyileştirilmiş erişilebilirlik odaklı personel paneli." />
+  <title>Accessibility-Focused Staff Panel — Sade Uckun</title>
+  <link rel="canonical" href="https://sadeuckun.com/tr/projects/accessibility-panel/" />
+  <link rel="alternate" hreflang="en" href="https://sadeuckun.com/projects/accessibility-panel/" />
+  <link rel="alternate" hreflang="tr" href="https://sadeuckun.com/tr/projects/accessibility-panel/" />
+  <link rel="alternate" hreflang="x-default" href="https://sadeuckun.com/projects/accessibility-panel/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css?v=4" />
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <a href="/tr/" class="nav-logo" aria-label="Sade Uckun ana sayfa">SU</a>
+    <div class="nav-actions">
+      <ul class="nav-links" role="list">
+        <li><a href="/tr/#about">Hakkımda</a></li>
+        <li><a href="/tr/#work">Deneyim</a></li>
+        <li><a href="/tr/projects/" class="nav-link--active">Projeler</a></li>
+        <li><a href="https://blog.sadeuckun.com" target="_blank" rel="noopener noreferrer">Blog</a></li>
+      </ul>
+      <div class="lang-switch" aria-label="Dil değiştirici">
+        <a href="/projects/accessibility-panel/">EN</a>
+        <a href="/tr/projects/accessibility-panel/" class="is-active" aria-current="page">TR</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <article class="content-article">
+        <p class="content-article-meta">Vue.js · Symfony · Nightwatch</p>
+        <h1 class="content-article-title">Accessibility-Focused Staff Panel</h1>
+        <div class="content-article-body">
+          <p>Bu proje, büyük bir kamu kurumu ile ilişkili yapıda kullanılan erişilebilirlik odaklı bir personel paneliydi. Amaç, karmaşık bir iç sistemi görme engelli kullanıcılar için belirgin şekilde daha kolay kullanılabilir hâle getirmekti.</p>
+          <p><strong>Proje detayı.</strong> Platformun frontend'i <strong>Vue.js</strong>, backend'i <strong>Symfony</strong> ile geliştirildi. Ekran okuyucu ve klavye odaklı kullanıcılar için daha akıcı bir deneyim sağlamak üzere özel klavye kısayolları, tabindex mantığı ve görsel olmayan etkileşim kalıpları kullanıldı.</p>
+          <p><strong>Katkım.</strong> Frontend iyileştirmelerinin sorumluluğunu aldım, mevcut <strong>store-controller yapısını</strong> refactor ettim, kodun modülerliğini artırdım ve erişilebilirliği yüzeysel bir checklist değil, gerçek bir etkileşim tasarımı problemi olarak ele aldım.</p>
+          <p><strong>Klavye navigasyonu iyileştirmeleri</strong>, <strong>özel kısayollar</strong>, <strong>focus management</strong> ve <strong>ARIA odaklı düzenlemeler</strong> implement ederek yardımcı teknolojilerle çalışan kullanıcılar için arayüzü daha akıcı ve öngörülebilir hale getirdim.</p>
+          <p>Güvenilirliği artırmak için ayrıca <strong>Nightwatch end-to-end testleri</strong> ekledim ve sürdürdüm; böylece ekip kritik kullanıcı akışlarını daha güvenli şekilde doğrulayabildi.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Sade Uckun</p>
+    </div>
+  </footer>
+</body>
+</html>

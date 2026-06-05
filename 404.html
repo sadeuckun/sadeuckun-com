@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="404 page for sadeuckun.com with English and Turkish recovery links." />
+<title>404 - Page Not Found</title>
+<link rel="canonical" href="https://sadeuckun.com/404.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --ink: #111111;
+    --ink-soft: #333333;
+    --ink-mute: #8a8a86;
+    --paper: #faf9f6;
+    --rule: #e6e4dc;
+    --accent: #1f2a55;
+    --accent-soft: rgba(31, 42, 85, 0.08);
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.55), transparent 32%), #ece9df;
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+
+  .page {
+    width: min(860px, 100%);
+    background: var(--paper);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06), 0 12px 40px rgba(0,0,0,0.12);
+    border: 1px solid rgba(17, 17, 17, 0.03);
+    padding: 42px 44px 40px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.22), transparent 28%), linear-gradient(to bottom, transparent, rgba(17,17,17,0.015));
+    pointer-events: none;
+  }
+
+  .header, .lang-switch, .hero {
+    position: relative;
+    z-index: 1;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 18px;
+  }
+
+  .name {
+    margin: 0 0 6px 0;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  .role, .lang-switch a {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+  }
+
+  .role { color: var(--accent); font-weight: 500; }
+
+  .nav {
+    color: var(--ink-mute);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+    white-space: nowrap;
+  }
+
+  .nav:hover { color: var(--accent); border-color: var(--accent); }
+
+  .lang-switch {
+    display: inline-flex;
+    gap: 8px;
+    margin-bottom: 26px;
+  }
+
+  .lang-switch a {
+    text-decoration: none;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 8px 12px;
+    background: var(--accent-soft);
+  }
+
+  .lang-switch a:hover,
+  .lang-switch a.is-active {
+    color: var(--paper);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .panel {
+    border: 1px solid var(--rule);
+    border-radius: 20px;
+    padding: 24px;
+    background: rgba(255,255,255,0.5);
+  }
+
+  .eyebrow {
+    font-family: 'Geist Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-mute);
+    margin-bottom: 12px;
+  }
+
+  .code {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(64px, 12vw, 112px);
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    margin: 0 0 14px 0;
+  }
+
+  .headline {
+    font-size: clamp(24px, 4vw, 36px);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+  }
+
+  .summary, .aside-copy {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .button,
+  .button-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-family: 'Geist Mono', monospace;
+    transition: 160ms ease;
+    box-sizing: border-box;
+  }
+
+  .button {
+    background: var(--ink);
+    color: var(--paper);
+    border: 1px solid var(--ink);
+  }
+
+  .button:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  .button-secondary {
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    background: var(--accent-soft);
+  }
+
+  .button-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  @media (max-width: 760px) {
+    body { padding: 18px; }
+    .page { padding: 28px 22px 26px; }
+    .header, .hero { grid-template-columns: 1fr; }
+    .hero { display: grid; }
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1 class="name">Sade Uckun</h1>
+        <div class="role">Page Not Found</div>
+      </div>
+      <a class="nav role" href="/">Back to Home</a>
+    </header>
+
+    <div class="lang-switch" aria-label="Language switcher">
+      <a href="#" class="is-active">EN</a>
+      <a href="/tr/">TR Home</a>
+    </div>
+
+    <section class="hero">
+      <article class="panel">
+        <div class="eyebrow">HTTP 404</div>
+        <h2 class="code">404</h2>
+        <p class="headline">This page does not exist.</p>
+        <p class="summary">
+          The link may be outdated, the address may be mistyped, or the page may have been moved.
+          You can return to the homepage or open the CV directly from here.
+        </p>
+        <div class="actions">
+          <a class="button" href="/">Go to Homepage</a>
+          <a class="button-secondary" href="/cv/">Open CV</a>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="eyebrow">TR</div>
+        <h2 class="code">404</h2>
+        <p class="headline">Bu sayfa bulunamadi.</p>
+        <p class="summary">
+          Baglanti eski olabilir, adres hatali yazilmis olabilir veya sayfa tasinmis olabilir.
+          Ana sayfaya donebilir ya da CV sayfasini acabilirsiniz.
+        </p>
+        <div class="actions">
+          <a class="button" href="/tr/">TR Ana Sayfa</a>
+          <a class="button-secondary" href="/tr/cv/">TR CV</a>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
