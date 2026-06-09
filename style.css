@@ -1200,4 +1200,8 @@ code {
   .content-index {
     padding-inline: 1.5rem;
   }
+
+  .content-article {
+    padding-top: calc(var(--nav-h) + 1.5rem);
+  }
 }
