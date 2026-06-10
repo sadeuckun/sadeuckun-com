@@ -96,12 +96,12 @@ if (golCanvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches)
 }
 
 // ============================================
-// CHARACTER — show when footer is reached
+// CHARACTER — show when About section is reached
 // ============================================
 const character = document.querySelector('.hero-character');
-const footer = document.querySelector('.footer');
+const aboutSection = document.getElementById('about');
 
-if (character && footer) {
+if (character && aboutSection) {
   const characterObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -110,7 +110,7 @@ if (character && footer) {
     });
   }, { threshold: 0.2 });
 
-  characterObserver.observe(footer);
+  characterObserver.observe(aboutSection);
 }
 
 // ============================================
